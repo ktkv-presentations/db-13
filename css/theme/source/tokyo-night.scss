@@ -5,13 +5,13 @@
  */
 
 // Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/settings";
+@import '../template/mixins';
+@import '../template/settings';
 // ---------------------------------------------
 
 // Include theme-specific fonts
 @import url(./fonts/ubuntu/stylesheet.css);
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 // Override theme settings (see ../template/settings.scss)
 $blue0: rgb(61, 89, 161);
@@ -32,8 +32,8 @@ $backgroundColor: $bg;
 $mainColor: $fg;
 
 $mainFontSize: 28px;
-$mainFont: "Ubuntu Nerd Font", "Ubuntu", Helvetica, sans-serif;
-$headingFont: "Ubuntu Nerd Font", "Ubuntu", Helvetica, sans-serif;
+$mainFont: 'Ubuntu Nerd Font', 'Ubuntu', Helvetica, sans-serif;
+$headingFont: 'Ubuntu Nerd Font', 'Ubuntu', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -42,7 +42,7 @@ $linkColor: $blue;
 $linkColorHover: lighten($linkColor, 15%);
 $selectionBackgroundColor: rgba($linkColor, 0.75);
 
-$codeFont: "Fira Code", "sans-serif";
+$codeFont: 'Fira Code', 'sans-serif';
 
 $heading1Color: $red;
 $heading2Color: $yellow;
@@ -60,108 +60,118 @@ $heading4Size: 1em;
 @include light-bg-text-color(#222);
 
 // Theme template ------------------------------
-@import "../template/theme";
+@import '../template/theme';
 // ---------------------------------------------
 
 .reveal h1 {
-  color: $heading1Color;
+    color: $heading1Color;
 }
 
 .reveal h2 {
-  color: $heading2Color;
+    color: $heading2Color;
 }
 
 .reveal h3 {
-  color: $heading3Color;
+    color: $heading3Color;
 }
 
 .reveal h4 {
-  color: $heading4Color;
+    color: $heading4Color;
 }
 
 .reveal h5 {
-  color: $heading5Color;
+    color: $heading5Color;
 }
 
 .reveal h6 {
-  color: $heading6Color;
+    color: $heading6Color;
 }
 
-.reveal h4, .reveal h5, .reveal h6 {
-  text-transform: unset !important;
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    text-transform: unset !important;
 }
 
 .reveal p {
-  text-align: justify;
+    text-align: justify;
 }
 
 .slide-number {
-  top: 1em;
-  right: 1em !important;
-  bottom: unset !important;
-  font-size: 1em !important;
-  background-color: transparent !important;
-  color: $blue0 !important;
-  white-space: none;
+    top: 1em;
+    right: 1em !important;
+    bottom: unset !important;
+    font-size: 1em !important;
+    background-color: transparent !important;
+    color: $blue0 !important;
+    white-space: none;
 }
 
-img[data-type="qrcode"] {
-  cursor: pointer;
+img[data-type='qrcode'] {
+    cursor: pointer;
 }
 
 pre code {
-  font-size: 1.5em;
-  line-height: 1.2em;
+    font-size: 1.5em;
+    line-height: 1.2em;
 }
 
 div.border,
-div[class^="border-"] {
-  border-radius: 0.5em;
-  border: solid 2px;
-  padding: 0.5em;
-  border-color: $blue0;
+div[class^='border-'] {
+    border-radius: 0.5em;
+    border: solid 2px;
+    padding: 0.5em;
+    border-color: $blue0;
 }
 
 div.border-b0 {
-  border-color: $blue0;
+    border-color: $blue0;
 }
 
 div.border-b {
-  border-color: $blue;
+    border-color: $blue;
 }
 
 div.border-c {
-  border-color: $cyan;
+    border-color: $cyan;
 }
 
 div.border-m {
-  border-color: $magenta;
+    border-color: $magenta;
 }
 
 div.border-o {
-  border-color: $orange;
+    border-color: $orange;
 }
 
 div.border-y {
-  border-color: $yellow;
+    border-color: $yellow;
 }
 
 div.border-g {
-  border-color: $green;
+    border-color: $green;
 }
 
 div.border-t {
-  border-color: $teal;
+    border-color: $teal;
 }
 
 div.border-r {
-  border-color: $red;
+    border-color: $red;
 }
 
 div.border-r1 {
-  border-color: $red1;
+    border-color: $red1;
 }
 
-#notescanvas, #chalkboard, #customcontrols {
-  font-family: $mainFont !important;
+#notescanvas,
+#chalkboard,
+#customcontrols {
+    font-family: $mainFont !important;
+}
+
+i {
+    color: $cyan;
+    font-style: italic;
+    font-size: #{$mainFontSize * 0.8};
 }
